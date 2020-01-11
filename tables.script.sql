@@ -17,3 +17,9 @@ CREATE TABLE serverDB.domain_server
     country STRING,
     owner STRING
 );
+
+CREATE TABLE serverDB.recent_searches
+(
+    hostId STRING NOT NULL PRIMARY KEY,
+    last_visited TIMESTAMP NOT NULL
+);
